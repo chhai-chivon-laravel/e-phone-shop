@@ -12,6 +12,22 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+     <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+    <!-- Styles -->
+    <link href="{{ url('bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url('font-awesome-4.6.3/css/font-awesome.min.css') }}">
+    <link href="{{ url('bootstrap-social-gh-pages/bootstrap-social.css') }} " rel="stylesheet">
+    <link href="{{ url('bootstrap-social-gh-pages/assets/css/bootstrap.css')}}" rel="stylesheet">
+    <link href="{{ url('bootstrap-social-gh-pages/assets/css/font-awesome.css') }} " rel="stylesheet">
+    <link href="{{ url('bootstrap-social-gh-pages/assets/css/docs.css') }}" rel="stylesheet" > 
+
+    
+    <style type="text/css">
+        .btn-social{
+            margin:2px;
+        }
+    </style>
 </head>
 <body>
     <div id="app">
@@ -76,5 +92,7 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="{{ url('bootstrap/js/bootstrap.min.js')}}" ></script>
 </body>
 </html>
