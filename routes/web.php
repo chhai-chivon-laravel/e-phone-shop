@@ -18,3 +18,29 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+
+
+Route::resource('products','ProductController');
+
+
+
+
+/**
+ *
+ *
+ * DASHBOARD ADMIN
+ *
+ *
+ */
+Route::group(['prefix'=>'dashboard'],function(){
+
+    Route::get('index','DashboardController@index')->name('index');
+
+    Route::get('product','DashboardController@product')->name('product');
+
+    Route::get('category','DashboardController@category')->name('category');
+
+    Route::get('report','DashboardController@report')->name('report');
+});
