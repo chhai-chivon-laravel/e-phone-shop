@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('/welcome', function () {
     return view('welcome');
 });
 
@@ -24,7 +24,14 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::resource('products','ProductController');
 
-
+/**
+ *
+ *
+ * PAGE
+ *
+ *
+ */
+Route::get('/', 'PageController@index');
 
 
 /**
